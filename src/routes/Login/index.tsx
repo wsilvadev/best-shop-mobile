@@ -6,7 +6,7 @@ import Buttons from '../../components/Button';
 
 import styles from './style';
 
-const Login = () => {
+const Login = ({navigation}) => {
   return (
     <View style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#526d74" />
@@ -15,7 +15,10 @@ const Login = () => {
       <Input icon="email" placeholder="Email address" onChangeText={() => {}} />
       <Input icon="key" placeholder="password" onChangeText={() => {}} />
       <Buttons name="Login" />
-      <Buttons name="Register" />
+      <Buttons
+        name="Register"
+        onPress={() => navigation.navigate('Register')}
+      />
     </View>
   );
 };
