@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "lib": ["es6"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@routes": ["src/routes"]
+    },
+    "strict": true,
+    "target": "es5"
+  }
+}

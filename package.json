@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "react": "16.11.0",
-    "react-native": "0.62.2"
+    "react-native": "0.62.2",
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -25,5 +26,10 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js"
+  ]
 }
