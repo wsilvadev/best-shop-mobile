@@ -1,4 +1,5 @@
 {
+  "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
     "jsx": "react",
     "allowJs": true,
@@ -9,14 +10,16 @@
     "noEmit": true,
     "module": "commonjs",
     "sourceMap": true,
-    "outDir": "dist",
+    "outDir": "build",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
       "@components/*": ["src/components/*"],
       "@routes": ["src/routes"]
     },
+    "rootDir": ".",
     "strict": true,
     "target": "es5"
-  }
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts"]
 }
