@@ -5,6 +5,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import Login from '../routes/Login';
 import Register from '../routes/Register';
+
+import Home from './home';
 const Stack = createStackNavigator();
 
 const Navigations = () => {
@@ -35,6 +37,25 @@ const Navigations = () => {
           component={Register}
           options={{
             title: 'Register',
+            headerStyle: {
+              elevation: 9,
+              height: 90,
+              backgroundColor: '#526d74',
+            },
+            headerTitleStyle: {
+              fontFamily: 'serif',
+              fontSize: 30,
+              fontWeight: 'bold',
+            },
+            headerTintColor: '#fff',
+            headerTitleAlign: 'center',
+          }}
+        />
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{
+            title: 'Home',
             headerStyle: {
               elevation: 9,
               height: 90,

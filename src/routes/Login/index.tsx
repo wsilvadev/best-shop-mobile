@@ -14,7 +14,7 @@ const Login = ({navigation}) => {
 
       <Input icon="email" placeholder="Email address" onChangeText={() => {}} />
       <Input icon="key" placeholder="password" onChangeText={() => {}} />
-      <Buttons name="Login" />
+      <Buttons name="Login" onPress={() => navigation.navigate('Home')} />
       <Buttons
         name="Register"
         onPress={() => navigation.navigate('Register')}
